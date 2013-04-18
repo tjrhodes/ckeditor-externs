@@ -17,7 +17,7 @@ extern class Config
 	 * Defaults to: null
 	 * Available since: 4.1
 	 */
-	public var allowedContent:Bool;
+	public var allowedContent:Dynamic;
 	
 	/**
 	 * Extra height in pixel to leave between the bottom boundary of content with document size when auto resizing.
