@@ -192,8 +192,8 @@ extern class Filter
 	 * 												Content will not be filtered with allowed content rules.
 	 * @return	Bool - Whether some part of the fragment was removed by the filter.
 	 */
-	@:overload(function(fragment:Element, ?toHtml, ?transfromOnly):Bool{})
-	public function applyTo(fragment:Fragment, ?toHtml, ?transformOnly):Bool;
+	@:overload(function(fragment:Element, ?toHtml:Bool, ?transfromOnly:Bool):Bool{})
+	public function applyTo(fragment:Fragment, ?toHtml:Bool, ?transformOnly:Bool):Bool;
 	
 	/**
 	 * Checks whether the content defined in the test argument is allowed by this filter.
