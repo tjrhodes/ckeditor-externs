@@ -1,0 +1,10 @@
+{
+  "name": "ckeditor-externs",
+  "license": "MIT",
+  "tags": ["cross","dom","xml","js","domtools","dtx","detox"],
+  "description": "Javascript externs for CK Editor, a browser based wysiwyg editor.  These externs are functional for basic usage, but by no means complete.  You are welcome to contribute via Github.",
+  "contributors": ["jason"],
+  "releasenote": "Pacakge for haxelib.",
+  "version": "1.0.0-beta.1",
+  "url": "https://github.com/tjrhodes/ckeditor-externs"
+}

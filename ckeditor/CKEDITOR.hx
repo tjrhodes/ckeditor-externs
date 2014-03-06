@@ -1,7 +1,7 @@
 package ckeditor;
 import ckeditor.dom.Document;
 import ckeditor.dom.Element;
-import js.Dom;
+import js.html.*;
 
 /**
  * This is the API entry point. The entire CKEditor code runs under this object.
@@ -507,8 +507,8 @@ extern class CKEDITOR
 	 * 			var textarea = document.body.appendChild( document.createElement( 'textarea' ) );
 	 * 			CKEDITOR.replace( textarea );
 	 */
-	@:overload(function(element:Dynamic, ?config:Config):Void{})
-	static public function replace(element:String, ?config:Config):Void;
+	@:overload(function(element:Dynamic, ?config:Config):Editor{})
+	static public function replace(element:String, ?config:Config):Editor;
 	
 	/**
 	 * Replace all <textarea> elements available in the document with editor instances.
@@ -525,7 +525,7 @@ extern class CKEDITOR
 	 * 			} );
 	 */
 	@:overload(function(className:String):Void{})
-	@:overload(function(customAssertions:Textarea->Config->Bool):Void{})
+	@:overload(function(customAssertions:TextAreaElement->Config->Bool):Void{})
 	static public function replaceAll():Void;
 	
 	// EVENTS

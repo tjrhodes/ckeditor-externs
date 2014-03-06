@@ -1110,7 +1110,7 @@ extern class Editor
 	 * @param	callBack : Void->Void - Function to be called after the setData is completed.
 	 * @param	internal : Bool - Whether to suppress any event firing when copying data internally inside the editor.
 	 */
-	public function setData( data:String, callBack:Void->Void, internal:Bool ):Void;
+	public function setData( data:String, ?callBack:Void->Void, ?internal:Bool ):Void;
 	
 	/**
 	 * Assigns keystrokes associated to editor commands.

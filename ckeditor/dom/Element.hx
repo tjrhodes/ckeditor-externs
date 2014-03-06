@@ -15,7 +15,7 @@ extern class Element
 	 * @example	var element = new CKEDITOR.dom.element( 'span' );
 	 * 			alert( element.$.nodeType ); // '1'
 	 */
-	public var nativeDOMObject(getDOMObject, null):Dynamic;
+	public var nativeDOMObject(get, null):Dynamic;
 	
 	/**
 	 * The node type. This is a constant value set to CKEDITOR.NODE_ELEMENT.
@@ -24,7 +24,7 @@ extern class Element
 	 */
 	public var type(default, null):Int;
 	
-	private inline function getDOMObject():Dynamic
+	private inline function get_nativeDOMObject():Dynamic
 	{
 		return Reflect.getProperty(this, "$");
 	}
